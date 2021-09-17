@@ -14,24 +14,24 @@
     
     
     
-    <title>Hello World | djkloop 的技术博客 | 一无所有，则无所不能！</title>
+    <title>Rust学习笔记3 | djkloop 的技术博客 | 一无所有，则无所不能！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="test">
-    <meta name="description" content="Welcome to Hexo! This is your very first post.  Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quic">
+    <meta name="keywords" content="编程语言">
+    <meta name="description" content="万丈高楼，HelloWorld起…  前言 https:&#x2F;&#x2F;kaisery.github.io&#x2F;trpl-zh-cn&#x2F;ch04-00-understanding-ownership.html  所有权（系统）是 Rust 最为与众不同的特性，它让 Rust 无需垃圾回收（garbage collector）即可保障内存安全。因此，理解 Rust 中所有权如何工作是十分重要的。本章，我们将讲到所有">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/index.html">
+<meta property="og:title" content="Rust学习笔记3">
+<meta property="og:url" content="https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/index.html">
 <meta property="og:site_name" content="djkloop 的技术博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post.  Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quic">
+<meta property="og:description" content="万丈高楼，HelloWorld起…  前言 https:&#x2F;&#x2F;kaisery.github.io&#x2F;trpl-zh-cn&#x2F;ch04-00-understanding-ownership.html  所有权（系统）是 Rust 最为与众不同的特性，它让 Rust 无需垃圾回收（garbage collector）即可保障内存安全。因此，理解 Rust 中所有权如何工作是十分重要的。本章，我们将讲到所有">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-18T04:06:00.000Z">
-<meta property="article:modified_time" content="2020-05-21T04:01:44.000Z">
+<meta property="article:published_time" content="2020-05-23T18:54:48.000Z">
+<meta property="article:modified_time" content="2020-06-09T17:14:03.000Z">
 <meta property="article:author" content="djkloop">
-<meta property="article:tag" content="test">
+<meta property="article:tag" content="编程语言">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="djkloop 的技术博客" href="/atom.xml">
@@ -164,14 +164,14 @@
 </header>
 <header class="content-header post-header" id="container">
     <div class="container fade-opacity full-wrapper-container">
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">Rust学习笔记3</h1>
         <h3 class="subtitle">
-             <time datetime="2020-05-18T04:06:00.000Z" itemprop="datePublished" class="page-time">
-  2020-05-18
+             <time datetime="2020-05-23T18:54:48.000Z" itemprop="datePublished" class="page-time">
+  2020-05-24
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Test/">Test</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Rust/">Rust</a></li></ul>
  
         </h3>
     </div>
@@ -186,20 +186,20 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">2.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">3.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">4.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">5.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-hello-world"
+<article id="post-Rust-3"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Hello World</h1>
+        <h1 class="post-card-title">Rust学习笔记3</h1>
         <div class="post-meta">
-            <time class="post-time" title="2020-05-18 12:06:00" datetime="2020-05-18T04:06:00.000Z"  itemprop="datePublished">2020-05-18</time>
+            <time class="post-time" title="2020-05-24 02:54:48" datetime="2020-05-23T18:54:48.000Z"  itemprop="datePublished">2020-05-24</time>
 
-             <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Test/">Test</a></li></ul> 
+             <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Rust/">Rust</a></li></ul> 
 
             
 <span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
@@ -209,23 +209,14 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. </p>
-<p>Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
-
-<h2 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h2 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h2 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate 你说的太对了...</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h2 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <blockquote>
+<p>万丈高楼，HelloWorld起…</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p><a href="https://kaisery.github.io/trpl-zh-cn/ch04-00-understanding-ownership.html" target="_blank" rel="noopener">https://kaisery.github.io/trpl-zh-cn/ch04-00-understanding-ownership.html</a></p>
+</blockquote>
+<p>所有权（系统）是 Rust 最为与众不同的特性，它让 Rust 无需垃圾回收（garbage collector）即可保障内存安全。因此，理解 Rust 中所有权如何工作是十分重要的。本章，我们将讲到所有权以及相关功能：借用、slice 以及 Rust 如何在内存中布局数据。</p>
+<figure class="highlight rs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. rust通过所有权机制来管理内存，编译器在编译就会根据所有权规则对内存的使用进行检测</span></span><br><span class="line"><span class="comment">// 2. 堆和栈</span></span><br><span class="line"><span class="comment">//  2.1 在编译时栈中的所有数据都必须占用已知且固定的大小</span></span><br><span class="line"><span class="comment">//  2.2 在编译时大小未知或大小可能变化的数据，要改为存储在堆上</span></span><br><span class="line"><span class="comment">// 3. 作用域</span></span><br><span class="line"><span class="comment">// 4. String内存回收</span></span><br><span class="line"><span class="comment">// 5. 移动</span></span><br><span class="line"><span class="comment">// 6. clone</span></span><br><span class="line"><span class="comment">// 7. 栈上数据拷贝</span></span><br><span class="line"><span class="comment">// 8. 函数和作用域</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">  <span class="keyword">let</span> x: <span class="built_in">i32</span> = <span class="number">1</span>;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> y: <span class="built_in">i32</span> = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"y = &#123;&#125;"</span>, y);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"x - x = &#123;&#125;"</span>, x);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> s1 = <span class="built_in">String</span>::from(<span class="string">"Hello"</span>);</span><br><span class="line">    s1.push_str(<span class="string">" World"</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s1 = &#123;&#125;"</span>, s1); <span class="comment">// String类型离开作用域时，会调用drop方法</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 移动</span></span><br><span class="line">    <span class="keyword">let</span> s2 = <span class="built_in">String</span>::from(<span class="string">"test"</span>);</span><br><span class="line">    <span class="comment">// let s3 = s2  会报错，s2离开的时候内存会被释放掉，所以不能这样直接赋值，也就是不能再使用s2</span></span><br><span class="line">    <span class="comment">// 这里可以使用深拷贝来解决s2不能使用的问题</span></span><br><span class="line">    <span class="keyword">let</span> s3 = s2.clone();</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s2 = &#123;&#125;"</span>, s2);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s2 = &#123;&#125;"</span>, s3);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// copy 栈上的数据拷贝，就是拷贝的数据。</span></span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">let</span> b = a;</span><br><span class="line">  <span class="built_in">println!</span>(<span class="string">"a = &#123;&#125;, b = &#123;&#125;"</span>, a, b);</span><br><span class="line">  <span class="comment">// 常用的copy trait有</span></span><br><span class="line">  <span class="comment">// 所有的整型</span></span><br><span class="line">  <span class="comment">// 浮点型</span></span><br><span class="line">  <span class="comment">// 布尔值</span></span><br><span class="line">  <span class="comment">// 字符类型 char</span></span><br><span class="line">  <span class="comment">// 元组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
 
         <blockquote class="post-copyright">
@@ -233,12 +224,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-05-21T04:01:44.000Z" itemprop="dateUpdated">2020-05-21 12:01:44</time>
+    最后更新时间：<time datetime="2020-06-09T17:14:03.000Z" itemprop="dateUpdated">2020-06-10 01:14:03</time>
 </span><br>
 
 
         
-        <br />文章地址：<a href="/2020/05/18/hello-world/" target="_blank" rel="external">https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/</a>
+        <br />文章地址：<a href="/2020/05/24/Rust-3/" target="_blank" rel="external">https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/</a>
         
     </div>
     
@@ -259,7 +250,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
 
             
@@ -269,7 +260,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/&title=《Hello World》 — djkloop 的技术博客&pic=https://djkloop.github.io/djkloopcn/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&pic=https://djkloop.github.io/djkloopcn/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -279,23 +270,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/&title=《Hello World》 — djkloop 的技术博客&source=Welcome to Hexo! This is your very first post. 
-Check documentation for more ..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — djkloop 的技术博客&url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/&via=https://djkloop.github.io/djkloopcn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Rust学习笔记3》 — djkloop 的技术博客&url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/&via=https://djkloop.github.io/djkloopcn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -318,13 +308,20 @@ Check documentation for more ..." data-title=" QQ">
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2020/05/24/Rust-2/" id="post-prev" class="post-nav-link">
+      <a href="/2020/05/24/Rust-01/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Rust学习笔记2</h4>
+        <h4 class="title">Rust学习笔记1</h4>
       </a>
     </div>
   
 
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/05/24/Rust-2/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Rust学习笔记2</h4>
+      </a>
+    </div>
   
 </nav>
 
@@ -477,7 +474,7 @@ Check documentation for more ..." data-title=" QQ">
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/&title=《Hello World》 — djkloop 的技术博客&pic=https://djkloop.github.io/djkloopcn/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&pic=https://djkloop.github.io/djkloopcn/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -487,23 +484,22 @@ Check documentation for more ..." data-title=" QQ">
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/&title=《Hello World》 — djkloop 的技术博客&source=Welcome to Hexo! This is your very first post. 
-Check documentation for more ..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — djkloop 的技术博客&url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/&via=https://djkloop.github.io/djkloopcn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Rust学习笔记3》 — djkloop 的技术博客&url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/&via=https://djkloop.github.io/djkloopcn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/djkloopcn/2020/05/18/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/djkloopcn/2020/05/24/Rust-3/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -514,7 +510,7 @@ Check documentation for more ..." data-title=" QQ">
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIUlEQVR42u3aW07DMBAF0O5/07AAoLl33CDFPv5CLcQ+QRrNw69XvL5GK3/yz11edywMDIzHMpKjrADab/N9MTAwTmMkofBT7CRm5mfDwMDAyBO4dRgGBgbGpxjvQ2QeRtf3xcDAOI2RhMJZeJ2lmzfW4hgYGA9kzNr3//PzLfMNDAyMRzFm7f7Z5zcOSjEwMLZm5Nu0h8uL2/zzi+djYGAcw1i5KrHe3E9K36hriIGBsREjb7G148xZQ61NMS8yXAwMjE0Zs5Jy5a/agcQveAwMjK0ZeTKXHzp5Zvsiom8xMDAOY8wGALNh5LC5lv8SBgbGwxl54ZqUr/moIH8pUTmNgYGxNSO/BLaywcrgoU1VMTAw9mPMAm6yZVvE5mPLugrHwMDYgrEybizudMS1Z/00DAyMrRl5z2o9EVwZZNZ33DAwMDZitMPLvLhtE8q6zp79BzAwMLZg5EdJOnmzkNqGXQwMjL0ZsxDcXtRoZxTt6BQDA+MERnvBayV9TMYGOftiyoGBgbEd431ydgcyHw8s3RDBwMA4gNEWvS1vNvL8MzXEwMDYjvFVrrbUfH/EfJx58UwMDIytGflKxpB50PzU66gxGBgYj2UkQXYldUsK1JXLGRgYGOcwZuVokvbNMO1pMTAwMNp0sD1WPgzAwMDAyANum1C211vr0QUGBsYBjORAs3ZbXpS2rTcMDIxzGG3puAKetfM+NsjEwMB4HuMblRmodl+lcuIAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLklEQVR42u3aS3KDQAwFwNz/0qQq2xj8JOFUmGlWLoNhmoU8+nx9xcfxc/z+fHZl9fqz3958YGBgPJZxXB5nSzk7e/bbyZ2v74CBgbEPoxoKk2/y+1eDOwYGBkY1pPYen78aDAwMjOojkySzl8piYGBgXDOSVDO/aXVBSXC/LRfHwMB4IGPSGPj05z/qb2BgYPxjxlE88i3jpD1QXhUGBsbSjKSJmHyfBM28SNcrwGFgYKzKqBbOqoMRk8muwovGwMDYgJEnk5ON4CQoF1oCGBgYyzGqS+yF10nboFyYw8DAWI6RhL/q56TdePNZDAyMDRiF4nvxMUlq2gv0LwIuBgbG0ozeyMWkxJYnt9ctCgwMjD0Z1XZm0uzslfAKaTAGBsYGjLzsNWlqVlPlcsDFwMBYlJGPTUwS0bw92WsqYGBg7MDIhyd6Ixe94tptw2EYGBgPZ+SFreo11fDdC9kYGBg7MAo7x48V0Xqv780OFwMDYzlGvtWrpp35S8l3slESi4GBsRBj0obMx8Lmrcry7AYGBsZyjOTxVcBdpbrCPwYGBsaijElBrRey8zQ4+Xt4sUHEwMBYjnEUj3uT294m8sVZDAyMpRl3LaI3PNFrP2BgYOzJyJeVl/irA2E3hFQMDIwNGJMUtJqmluN90jbAwMDACMJish2cNAneRFcMDAyM4Ea9lmReYntzJQYGxgaMXjNg0oYsh9RkcgQDA2NRxqSWVQXMi3EjDAYGxvMY3/fNIuB0VKfVAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
  
