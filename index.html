@@ -24,7 +24,7 @@
     <meta name="description" content="一无所有，则无所不能！">
 <meta property="og:type" content="website">
 <meta property="og:title" content="djkloop 的技术博客">
-<meta property="og:url" content="https://djkloop.github.io/djkloopcn/index.html">
+<meta property="og:url" content="https://djkloop.github.io/index.html">
 <meta property="og:site_name" content="djkloop 的技术博客">
 <meta property="og:description" content="一无所有，则无所不能！">
 <meta property="og:locale" content="zh_CN">
@@ -32,10 +32,10 @@
 <meta property="article:tag" content="你说的太对了！">
 <meta name="twitter:card" content="summary">
     
-        <link rel="alternate" type="application/atom+xml" title="djkloop 的技术博客" href="/atom.xml">
+        <link rel="alternate" type="application/atom+xml" title="djkloop 的技术博客" href="/djkloopcn/atom.xml">
     
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/style.css?v=1.7.3.alpha.1">
+    <link rel="shortcut icon" href="/djkloopcn/favicon.ico">
+    <link rel="stylesheet" href="/djkloopcn/css/style.css?v=1.7.3.alpha.1">
     <script>window.lazyScripts=[]</script>
 
     <!-- custom head -->
@@ -59,10 +59,10 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url('/img/brand.jpg')">
+    <div class="brand-wrap" style="background-image:url('/djkloopcn/img/brand.jpg')">
       <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/img/avatar.jpg">
+        <a href="/djkloopcn/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/djkloopcn/img/avatar.jpg">
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">djkloop</h5>
@@ -75,28 +75,28 @@
       <ul class="nav">
         
             <li class="waves-block waves-effect active">
-              <a href="/"  >
+              <a href="/djkloopcn/"  >
                 <i class="icon icon-lg icon-home"></i>
                 主页
               </a>
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/archives"  >
+              <a href="/djkloopcn/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 归档
               </a>
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/tags"  >
+              <a href="/djkloopcn/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标签
               </a>
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/categories"  >
+              <a href="/djkloopcn/categories"  >
                 <i class="icon icon-lg icon-th-list"></i>
                 分类
               </a>
@@ -193,7 +193,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-08-26 11:17:17" datetime="2020-08-26T03:17:17.000Z"  itemprop="datePublished">2020-08-26</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Golang/">Golang</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Golang/">Golang</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -225,7 +225,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/08/26/golang-channel/">Golang channel</a>
+      <a class="post-title-link" href="/djkloopcn/2020/08/26/golang-channel/">Golang channel</a>
     </h3>
   
 
@@ -241,7 +241,7 @@
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"sync"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">doWorker</span><span class="params">(id <span class="keyword">int</span>, w worker)</span></span> &#123;</span><br><span class="line">	<span class="keyword">for</span> n := <span class="keyword">range</span> w.in &#123;</span><br><span class="line">		fmt.Printf(<span class="string">"Worker %d received %c\n"</span>, id, n)</span><br><span class="line">		w.done()</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> worker <span class="keyword">struct</span> &#123;</span><br><span class="line">	in   <span class="keyword">chan</span> <span class="keyword">int</span></span><br><span class="line">	done <span class="function"><span class="keyword">func</span><span class="params">()</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">createWorker</span><span class="params">(id <span class="keyword">int</span>, wg *sync.WaitGroup)</span> <span class="title">worker</span></span> &#123;</span><br><span class="line">	w := worker&#123;</span><br><span class="line">		in: <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="keyword">int</span>),</span><br><span class="line">		done: <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">			wg.Done()</span><br><span class="line">		&#125;,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">go</span> doWorker(id, w)</span><br><span class="line">	<span class="keyword">return</span> w</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">chanDemo</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> wg sync.WaitGroup</span><br><span class="line"></span><br><span class="line">	<span class="keyword">var</span> workers [<span class="number">10</span>]worker</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ &#123;</span><br><span class="line">		workers[i] = createWorker(i, &amp;wg)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	wg.Add(<span class="number">20</span>)</span><br><span class="line">	<span class="keyword">for</span> i, worker := <span class="keyword">range</span> workers &#123;</span><br><span class="line">		worker.in &lt;- <span class="string">'a'</span> + i</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> i, worker := <span class="keyword">range</span> workers &#123;</span><br><span class="line">		worker.in &lt;- <span class="string">'A'</span> + i</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	wg.Wait()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	chanDemo()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
         <a
-            href="/2020/08/26/golang-channel/"
+            href="/djkloopcn/2020/08/26/golang-channel/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -249,13 +249,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/08/26/golang-channel/"
+            href="/djkloopcn/2020/08/26/golang-channel/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -273,7 +273,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-08-26 10:48:13" datetime="2020-08-26T02:48:13.000Z"  itemprop="datePublished">2020-08-26</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Golang/">Golang</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Golang/">Golang</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -305,7 +305,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/08/26/Golang%20goroutine/">Golang goroutine</a>
+      <a class="post-title-link" href="/djkloopcn/2020/08/26/Golang%20goroutine/">Golang goroutine</a>
     </h3>
   
 
@@ -319,7 +319,7 @@
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"time"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> a [<span class="number">10</span>]<span class="keyword">int</span></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ &#123;</span><br><span class="line">		<span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">(n <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">			<span class="keyword">for</span> &#123;</span><br><span class="line">				a[n]++</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;(i)</span><br><span class="line">	&#125;</span><br><span class="line">	time.Sleep(time.Millisecond)</span><br><span class="line">	fmt.Println(a)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
         <a
-            href="/2020/08/26/Golang%20goroutine/"
+            href="/djkloopcn/2020/08/26/Golang%20goroutine/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -327,13 +327,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/08/26/Golang%20goroutine/"
+            href="/djkloopcn/2020/08/26/Golang%20goroutine/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -351,7 +351,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-08-18 12:04:37" datetime="2020-08-18T04:04:37.000Z"  itemprop="datePublished">2020-08-18</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Golang/">Golang</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Golang/">Golang</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -383,7 +383,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/08/18/Golang%20Struct/">Golang Struct</a>
+      <a class="post-title-link" href="/djkloopcn/2020/08/18/Golang%20Struct/">Golang Struct</a>
     </h3>
   
 
@@ -397,7 +397,7 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line">	<span class="string">"go_reset/tree"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">type myTreeNode <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">	*tree.Node</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (myNode *myTreeNode) postOrder() &#123;</span><br><span class="line">	<span class="keyword">if</span> myNode == nil || myNode.Node == nil &#123;</span><br><span class="line">		<span class="keyword">return</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	left := myTreeNode&#123;myNode.Left&#125;</span><br><span class="line">	left.postOrder()</span><br><span class="line"></span><br><span class="line">	right := myTreeNode&#123;myNode.Right&#125;</span><br><span class="line">	right.postOrder()</span><br><span class="line"></span><br><span class="line">	myNode.Print()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (myNode *myTreeNode) Traverse() &#123;</span><br><span class="line">	fmt.Println(<span class="string">"This method ois shadowed."</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	root := myTreeNode&#123;&amp;tree.Node&#123;Value: <span class="number">3</span>&#125;&#125;</span><br><span class="line"></span><br><span class="line">	root.Left = &amp;tree.Node&#123;</span><br><span class="line">		Value: <span class="number">3</span>,</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	root.Right = &amp;tree.Node&#123;</span><br><span class="line">		Value: <span class="number">5</span>,</span><br><span class="line">	&#125;</span><br><span class="line">	root.Right.Left = <span class="keyword">new</span>(tree.Node)</span><br><span class="line">	root.Left.Right = tree.CreateNode(<span class="number">10</span>)</span><br><span class="line">	root.Left.Right.SetValue(<span class="number">9</span>)</span><br><span class="line"></span><br><span class="line">	fmt.Print(<span class="string">"In-order traversal: "</span>)</span><br><span class="line">	root.Traverse()</span><br><span class="line"></span><br><span class="line">	fmt.Print(<span class="string">"My own post-order traversal: "</span>)</span><br><span class="line">	root.postOrder()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
         <a
-            href="/2020/08/18/Golang%20Struct/"
+            href="/djkloopcn/2020/08/18/Golang%20Struct/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -405,13 +405,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/08/18/Golang%20Struct/"
+            href="/djkloopcn/2020/08/18/Golang%20Struct/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -429,7 +429,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-08-17 11:14:40" datetime="2020-08-17T03:14:40.000Z"  itemprop="datePublished">2020-08-17</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Golang/">Golang</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Golang/">Golang</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -461,7 +461,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/08/17/Golang%20Map/">Golang Map</a>
+      <a class="post-title-link" href="/djkloopcn/2020/08/17/Golang%20Map/">Golang Map</a>
     </h3>
   
 
@@ -478,7 +478,7 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"unicode/utf8"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function">func <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	s := <span class="string">"你说的对!"</span> <span class="comment">// UTF-8</span></span><br><span class="line">	<span class="keyword">for</span> _, b := range []<span class="keyword">byte</span>(s) &#123;</span><br><span class="line">		fmt.Printf(<span class="string">"%X "</span>, b)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println()</span><br><span class="line">	<span class="keyword">for</span> i, ch := range s &#123;</span><br><span class="line">		fmt.Printf(<span class="string">"(%d %X)"</span>, i, ch)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println()</span><br><span class="line">	fmt.Println(<span class="string">"Run Count: "</span>, utf8.RuneCountInString(s))</span><br><span class="line"></span><br><span class="line">	bytes := []<span class="keyword">byte</span>(s)</span><br><span class="line">	<span class="keyword">for</span> len(bytes) &gt; <span class="number">0</span> &#123;</span><br><span class="line">		ch, <span class="built_in">size</span> := utf8.DecodeRune(bytes)</span><br><span class="line">		bytes = bytes[<span class="built_in">size</span>:]</span><br><span class="line">		fmt.Printf(<span class="string">"%c "</span>, ch)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println()</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> i, ch := range []rune(s) &#123;</span><br><span class="line">		fmt.Printf(<span class="string">"(%d %c) "</span>, i, ch)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
         <a
-            href="/2020/08/17/Golang%20Map/"
+            href="/djkloopcn/2020/08/17/Golang%20Map/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -486,13 +486,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/08/17/Golang%20Map/"
+            href="/djkloopcn/2020/08/17/Golang%20Map/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -510,7 +510,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-08-14 11:43:08" datetime="2020-08-14T03:43:08.000Z"  itemprop="datePublished">2020-08-14</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Golang/">Golang</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Golang/">Golang</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -542,7 +542,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/08/14/Golang%20Slice/">Golang Slice</a>
+      <a class="post-title-link" href="/djkloopcn/2020/08/14/Golang%20Slice/">Golang Slice</a>
     </h3>
   
 
@@ -558,7 +558,7 @@
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">printSlice</span><span class="params">(s []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	fmt.Printf(<span class="string">"%v, len=%d, cap=%d\n"</span>, s, <span class="built_in">len</span>(s), <span class="built_in">cap</span>(s))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="comment">// 会有默认值</span></span><br><span class="line">	<span class="keyword">var</span> s []<span class="keyword">int</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">20</span>; i++ &#123;</span><br><span class="line">		printSlice(s)</span><br><span class="line">		s = <span class="built_in">append</span>(s, <span class="number">2</span>*i+<span class="number">1</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println(s)</span><br><span class="line"></span><br><span class="line">	s1 := []<span class="keyword">int</span>&#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>&#125;</span><br><span class="line">	printSlice(s1)</span><br><span class="line">	s2 := <span class="built_in">make</span>([]<span class="keyword">int</span>, <span class="number">16</span>)</span><br><span class="line">	s3 := <span class="built_in">make</span>([]<span class="keyword">int</span>, <span class="number">10</span>, <span class="number">32</span>)</span><br><span class="line">	printSlice(s2)</span><br><span class="line">	printSlice(s3)</span><br><span class="line"></span><br><span class="line">	fmt.Println(<span class="string">"Coping slice"</span>)</span><br><span class="line">	<span class="built_in">copy</span>(s2, s1)</span><br><span class="line">	fmt.Println(s2)</span><br><span class="line"></span><br><span class="line">	fmt.Println(<span class="string">"Deleting elements from slice"</span>)</span><br><span class="line">	s2 = <span class="built_in">append</span>(s2[:<span class="number">3</span>], s2[<span class="number">4</span>:]...)</span><br><span class="line">	printSlice(s2)</span><br><span class="line"></span><br><span class="line">	fmt.Println(<span class="string">"Popping from front slice"</span>)</span><br><span class="line">	front := s2[<span class="number">0</span>]</span><br><span class="line">	s2 = s2[<span class="number">1</span>:]</span><br><span class="line"></span><br><span class="line">	fmt.Println(front)</span><br><span class="line">	printSlice(s2)</span><br><span class="line"></span><br><span class="line">	fmt.Println(<span class="string">"Popping from back slice"</span>)</span><br><span class="line">	tail := s2[<span class="built_in">len</span>(s2)<span class="number">-1</span>]</span><br><span class="line">	s2 = s2[:<span class="built_in">len</span>(s2)<span class="number">-1</span>]</span><br><span class="line"></span><br><span class="line">	fmt.Println(tail)</span><br><span class="line">	printSlice(s2)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
         <a
-            href="/2020/08/14/Golang%20Slice/"
+            href="/djkloopcn/2020/08/14/Golang%20Slice/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -566,13 +566,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/08/14/Golang%20Slice/"
+            href="/djkloopcn/2020/08/14/Golang%20Slice/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -590,7 +590,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-07-18 16:07:21" datetime="2020-07-18T08:07:21.000Z"  itemprop="datePublished">2020-07-18</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Linux/">Linux</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -622,7 +622,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/07/18/Linux/">终端命令</a>
+      <a class="post-title-link" href="/djkloopcn/2020/07/18/Linux/">终端命令</a>
     </h3>
   
 
@@ -1494,7 +1494,7 @@
  
 
         <a
-            href="/2020/07/18/Linux/"
+            href="/djkloopcn/2020/07/18/Linux/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -1502,13 +1502,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Terminal/" rel="tag">Terminal</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/Terminal/" rel="tag">Terminal</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/07/18/Linux/"
+            href="/djkloopcn/2020/07/18/Linux/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -1526,7 +1526,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-06-10 01:23:44" datetime="2020-06-09T17:23:44.000Z"  itemprop="datePublished">2020-06-10</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Rust/">Rust</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Rust/">Rust</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -1558,7 +1558,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/06/10/Rust-4/">Rust学习笔记4</a>
+      <a class="post-title-link" href="/djkloopcn/2020/06/10/Rust-4/">Rust学习笔记4</a>
     </h3>
   
 
@@ -1575,7 +1575,7 @@
  
 
         <a
-            href="/2020/06/10/Rust-4/"
+            href="/djkloopcn/2020/06/10/Rust-4/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -1583,13 +1583,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/06/10/Rust-4/"
+            href="/djkloopcn/2020/06/10/Rust-4/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -1607,7 +1607,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-05-24 12:37:51" datetime="2020-05-24T04:37:51.000Z"  itemprop="datePublished">2020-05-24</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Rust/">Rust</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Rust/">Rust</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -1639,7 +1639,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/05/24/Rust-01/">Rust学习笔记1</a>
+      <a class="post-title-link" href="/djkloopcn/2020/05/24/Rust-01/">Rust学习笔记1</a>
     </h3>
   
 
@@ -1663,7 +1663,7 @@
  
 
         <a
-            href="/2020/05/24/Rust-01/"
+            href="/djkloopcn/2020/05/24/Rust-01/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -1671,13 +1671,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/05/24/Rust-01/"
+            href="/djkloopcn/2020/05/24/Rust-01/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -1695,7 +1695,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-05-24 02:54:48" datetime="2020-05-23T18:54:48.000Z"  itemprop="datePublished">2020-05-24</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Rust/">Rust</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Rust/">Rust</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -1727,7 +1727,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/05/24/Rust-3/">Rust学习笔记3</a>
+      <a class="post-title-link" href="/djkloopcn/2020/05/24/Rust-3/">Rust学习笔记3</a>
     </h3>
   
 
@@ -1745,7 +1745,7 @@
 <figure class="highlight rs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. rust通过所有权机制来管理内存，编译器在编译就会根据所有权规则对内存的使用进行检测</span></span><br><span class="line"><span class="comment">// 2. 堆和栈</span></span><br><span class="line"><span class="comment">//  2.1 在编译时栈中的所有数据都必须占用已知且固定的大小</span></span><br><span class="line"><span class="comment">//  2.2 在编译时大小未知或大小可能变化的数据，要改为存储在堆上</span></span><br><span class="line"><span class="comment">// 3. 作用域</span></span><br><span class="line"><span class="comment">// 4. String内存回收</span></span><br><span class="line"><span class="comment">// 5. 移动</span></span><br><span class="line"><span class="comment">// 6. clone</span></span><br><span class="line"><span class="comment">// 7. 栈上数据拷贝</span></span><br><span class="line"><span class="comment">// 8. 函数和作用域</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">  <span class="keyword">let</span> x: <span class="built_in">i32</span> = <span class="number">1</span>;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> y: <span class="built_in">i32</span> = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"y = &#123;&#125;"</span>, y);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"x - x = &#123;&#125;"</span>, x);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> s1 = <span class="built_in">String</span>::from(<span class="string">"Hello"</span>);</span><br><span class="line">    s1.push_str(<span class="string">" World"</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s1 = &#123;&#125;"</span>, s1); <span class="comment">// String类型离开作用域时，会调用drop方法</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 移动</span></span><br><span class="line">    <span class="keyword">let</span> s2 = <span class="built_in">String</span>::from(<span class="string">"test"</span>);</span><br><span class="line">    <span class="comment">// let s3 = s2  会报错，s2离开的时候内存会被释放掉，所以不能这样直接赋值，也就是不能再使用s2</span></span><br><span class="line">    <span class="comment">// 这里可以使用深拷贝来解决s2不能使用的问题</span></span><br><span class="line">    <span class="keyword">let</span> s3 = s2.clone();</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s2 = &#123;&#125;"</span>, s2);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s2 = &#123;&#125;"</span>, s3);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// copy 栈上的数据拷贝，就是拷贝的数据。</span></span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">let</span> b = a;</span><br><span class="line">  <span class="built_in">println!</span>(<span class="string">"a = &#123;&#125;, b = &#123;&#125;"</span>, a, b);</span><br><span class="line">  <span class="comment">// 常用的copy trait有</span></span><br><span class="line">  <span class="comment">// 所有的整型</span></span><br><span class="line">  <span class="comment">// 浮点型</span></span><br><span class="line">  <span class="comment">// 布尔值</span></span><br><span class="line">  <span class="comment">// 字符类型 char</span></span><br><span class="line">  <span class="comment">// 元组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
         <a
-            href="/2020/05/24/Rust-3/"
+            href="/djkloopcn/2020/05/24/Rust-3/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -1753,13 +1753,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/05/24/Rust-3/"
+            href="/djkloopcn/2020/05/24/Rust-3/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -1777,7 +1777,7 @@
 >
     <div class="post-meta">
         <time class="post-time" title="2020-05-24 01:24:42" datetime="2020-05-23T17:24:42.000Z"  itemprop="datePublished">2020-05-24</time>
-  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Rust/">Rust</a></li></ul> 
+  <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Rust/">Rust</a></li></ul> 
  <!--
  * @Author       : djkloop
  * @Date         : 2020-05-19 23:03:12
@@ -1809,7 +1809,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2020/05/24/Rust-2/">Rust学习笔记2</a>
+      <a class="post-title-link" href="/djkloopcn/2020/05/24/Rust-2/">Rust学习笔记2</a>
     </h3>
   
 
@@ -1831,7 +1831,7 @@
 <h2 id="控制流"><a href="#控制流" class="headerlink" title="控制流"></a>控制流</h2><figure class="highlight rs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="comment">// if</span></span><br><span class="line">    <span class="keyword">let</span> y = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> y == <span class="number">1</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"y = 1"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// if - else</span></span><br><span class="line">    <span class="keyword">if</span> y == <span class="number">1</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"y = 1"</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"y != 1"</span>)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// if - else - if - else</span></span><br><span class="line">    <span class="keyword">if</span> y == <span class="number">1</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"y = 1"</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> y == <span class="number">0</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"y == 0"</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> y == <span class="number">3</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"y == 3"</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"other"</span>)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> condition = <span class="literal">true</span>;</span><br><span class="line">    <span class="comment">// if - else 里面的所有类型都应该一致</span></span><br><span class="line">    <span class="comment">// let x = if condition &#123; 5 &#125; else &#123; "6" &#125;; error</span></span><br><span class="line">    <span class="keyword">let</span> x = <span class="keyword">if</span> condition &#123; <span class="number">5</span> &#125; <span class="keyword">else</span> &#123; <span class="number">6</span> &#125;;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"x = &#123;&#125;"</span>, x);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// loop</span></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> counter = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">loop</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"in loop"</span>);</span><br><span class="line">        <span class="keyword">if</span> counter == <span class="number">3</span> &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;;</span><br><span class="line">        counter += <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> result = <span class="keyword">loop</span> &#123;</span><br><span class="line">        counter += <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> counter == <span class="number">6</span> &#123;</span><br><span class="line">            <span class="keyword">break</span> counter * <span class="number">3</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"result = &#123;&#125;"</span>, result);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// while</span></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> i != <span class="number">10</span> &#123;</span><br><span class="line">        i += <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"i = &#123;&#125;"</span>, i);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// for</span></span><br><span class="line">    <span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line">    <span class="comment">// for i in arr.iter() &#123;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> &amp;arr &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"element = &#123;&#125;"</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
         <a
-            href="/2020/05/24/Rust-2/"
+            href="/djkloopcn/2020/05/24/Rust-2/"
             class="post-more waves-effect waves-button"
         >
         </a>
@@ -1839,13 +1839,13 @@
     
     <div class="post-footer">
         
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
 
     </div>
     
     <div class="post-more-container">
         <a
-            href="/2020/05/24/Rust-2/"
+            href="/djkloopcn/2020/05/24/Rust-2/"
             class="post-more waves-effect waves-button"
         >
             阅读全文
@@ -1860,7 +1860,7 @@
     
 <nav id="page-nav">
     <div class="inner">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+    <span class="page-number current">1</span><a class="page-number" href="/djkloopcn/page/2/">2</a><a class="extend next" rel="next" href="/djkloopcn/page/2/">下一页</a>
     </div>
 </nav>
 
@@ -1889,7 +1889,7 @@
 
         <p>
             
-                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+                <span><a href="/djkloopcn/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
             <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
@@ -1936,7 +1936,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/djkloopcn/&title=djkloop 的技术博客&pic=https://djkloop.github.io/djkloopcn/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/&title=djkloop 的技术博客&pic=https://djkloop.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -1946,22 +1946,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/djkloopcn/&title=djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/&title=djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/djkloopcn/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=djkloop 的技术博客&url=https://djkloop.github.io/djkloopcn/&via=https://djkloop.github.io/djkloopcn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=djkloop 的技术博客&url=https://djkloop.github.io/&via=https://djkloop.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/djkloopcn/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -1972,19 +1972,19 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABy0lEQVR42u3aQW7DMAwEwPz/0y7QU4HUzpK0VBcYnYLElkY5ECKp1ysex/d4/+bn9++fz946m/O2gYuLO+Yel+Psmfzd6w1X58HFxd3JvQ5epy8HCyezJTPj4uI+k1sNfL3N4OLi/l9uksBcp0y4uLjP5+aBKYdeJ0LLczVcXNwBt1owXfF5YX0XFxe3yD2Ko9ommRRJf1kdFxd3C7eXkFwfVqrhrzwzLi7uRu5dxc1JUnTDaQsXF3fM7QWXfOG8/JH8iouLu4fbWyBJb5INVC9y4eLi7udOrmFVmyjzRg4uLu5fcefp0JJcDRcXdzE3D1h5gXXSPvlgwMXF3cLNm535wr3CSqHwiouLu4V7V7ciSXJ6oe3DP42Li7uMm0yXFzh6BZdRwRQXF/cmbh44egWRXj/ndH5cXNzt3N5xpPpM9fLWqxcpcXFxB9xe8lPdXhmRP4+Li7uAexTHpIDSa8ng4uLu584vZ0wW7gVNXFzcPdy8mZGgq8/n1zhwcXH3c6vNlWTqyTHoQ9kUFxf3MdxempQHzWg2XFzcR3Kr1yZ6rZfyNRJcXNwF3GryUz0MVROkm3M1XFzcIreailxvclIoua1Vg4uL2+d+ATphM9IEc/dfAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABVklEQVR42u3aSw6DMAwAUe5/aSp1iwjjT5EaT1aoheaxqG1sjgOv87uux3ffrs9vW7JkbcQ6l2vNqp9/vVaWrMksEhTufmL9CyRYyJIli7PIxrJkyXo/QJCkK0uWLM4iRfP6c0L5SS0vS9YWrEojKXr8Un9Llqy/Yp3BRa5t2EWWrGEsMizJNYwaRi+yZI1h8YFltCVUKcFlyZrGIn/vaGUbfax9SNWyZI1hRZNrJRmTElyWrGmselDoakih2lyWrK1ZvEnEC+XSTcqSNZLFW0uVh1gSIB5StSxZm7JyLwfkGrX8VmXJmsbiyZWPJxveepAlazCrsjEJFoG0LUvWMFauAbQOMXz7tlAiS9YWrGhQ6H2URY1dWbLGsLqGl5XGrixZsvhIMlo0JwersmTJig5C8MbJ4YosWWNY0ddbyZkklNyGFVmyhrFyeZMEgsrrerJkjWF9AAizfbWMMH7UAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
  
 
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/djkloopcn/', SHARE: true, REWARD: false };
 
 
 </script>
 
-<script src="/js/main.js?v=1.7.3.alpha.1"></script>
+<script src="/djkloopcn/js/main.js?v=1.7.3.alpha.1"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -2004,7 +2004,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </li>
 </template>
 
-<script src="/js/search.js?v=1.7.3.alpha.1" async></script>
+<script src="/djkloopcn/js/search.js?v=1.7.3.alpha.1" async></script>
 
 
 
