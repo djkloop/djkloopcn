@@ -46,11 +46,7 @@
         changeContainerBackImage: function () {
             var container = $("#container");
             var imgUrls = [
-                "https://wx1.sbimg.cn/2020/05/19/bg_1.jpg",
-                "https://wx1.sbimg.cn/2020/05/19/bg_2.jpg",
-                "https://wx1.sbimg.cn/2020/05/19/bg_3.jpg",
-                "https://wx1.sbimg.cn/2020/05/19/bg_4.jpg",
-                "https://wx1.sbimg.cn/2020/05/19/bg_5.jpg",
+                "https://gitee.com/djkloop-zjl/pic-go-photos/raw/master/pic1.jpg"
             ];
             var index = (Math.random() * imgUrls.length) | 0;
             container.style.backgroundImage = "url(" + imgUrls[index] + ")";
