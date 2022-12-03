@@ -14,24 +14,26 @@
     
     
     
-    <title>Rust学习笔记3 | djkloop 的技术博客 | 一无所有，则无所不能！</title>
+    <title>自媒体到底能不能作为副业 | djkloop 的技术博客 | 一无所有，则无所不能！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="编程语言">
-    <meta name="description" content="万丈高楼，HelloWorld起…  前言 https:&#x2F;&#x2F;kaisery.github.io&#x2F;trpl-zh-cn&#x2F;ch04-00-understanding-ownership.html  所有权（系统）是 Rust 最为与众不同的特性，它让 Rust 无需垃圾回收（garbage collector）即可保障内存安全。因此，理解 Rust 中所有权如何工作是十分重要的。本章，我们将讲到所有">
+    <meta name="keywords" content="杂文,副业,自媒体">
+    <meta name="description" content="7月份从北京回新疆了，可以说今年是非常阴间了，先是在北京封了一个月(5月)，然后6月辞职，7月回奎屯，8月回乌鲁木齐入职新公司，8月9号开始封控，11月28号解封…期间因为心情太差，想把代码的事情暂时缓缓，然后就找了个自媒体的事情干，就是剪剪电影之类的。从中吸取的一些反思或者说是对程序员的一种新的理解。  起因为什么要弄自媒体第一想着能不能搞点外快…在一个以前没有机会接触，因为疫情的居家办公的原">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Rust学习笔记3">
-<meta property="og:url" content="https://djkloop.github.io/2020/05/24/Rust-3/index.html">
+<meta property="og:title" content="自媒体到底能不能作为副业">
+<meta property="og:url" content="https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/index.html">
 <meta property="og:site_name" content="djkloop 的技术博客">
-<meta property="og:description" content="万丈高楼，HelloWorld起…  前言 https:&#x2F;&#x2F;kaisery.github.io&#x2F;trpl-zh-cn&#x2F;ch04-00-understanding-ownership.html  所有权（系统）是 Rust 最为与众不同的特性，它让 Rust 无需垃圾回收（garbage collector）即可保障内存安全。因此，理解 Rust 中所有权如何工作是十分重要的。本章，我们将讲到所有">
+<meta property="og:description" content="7月份从北京回新疆了，可以说今年是非常阴间了，先是在北京封了一个月(5月)，然后6月辞职，7月回奎屯，8月回乌鲁木齐入职新公司，8月9号开始封控，11月28号解封…期间因为心情太差，想把代码的事情暂时缓缓，然后就找了个自媒体的事情干，就是剪剪电影之类的。从中吸取的一些反思或者说是对程序员的一种新的理解。  起因为什么要弄自媒体第一想着能不能搞点外快…在一个以前没有机会接触，因为疫情的居家办公的原">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-23T18:54:48.000Z">
-<meta property="article:modified_time" content="2020-06-09T17:14:03.000Z">
+<meta property="article:published_time" content="2022-12-03T03:21:56.000Z">
+<meta property="article:modified_time" content="2022-12-03T16:34:13.000Z">
 <meta property="article:author" content="djkloop">
-<meta property="article:tag" content="编程语言">
+<meta property="article:tag" content="杂文">
+<meta property="article:tag" content="副业">
+<meta property="article:tag" content="自媒体">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="djkloop 的技术博客" href="/djkloopcn/atom.xml">
@@ -164,14 +166,14 @@
 </header>
 <header class="content-header post-header" id="container">
     <div class="container fade-opacity full-wrapper-container">
-        <h1 class="title">Rust学习笔记3</h1>
+        <h1 class="title">自媒体到底能不能作为副业</h1>
         <h3 class="subtitle">
-             <time datetime="2020-05-23T18:54:48.000Z" itemprop="datePublished" class="page-time">
-  2020-05-24
+             <time datetime="2022-12-03T03:21:56.000Z" itemprop="datePublished" class="page-time">
+  2022-12-03
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Rust/">Rust</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/%E8%87%AA%E5%AA%92%E4%BD%93/">自媒体</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/%E8%87%AA%E5%AA%92%E4%BD%93/%E7%94%9F%E6%B4%BB/">生活</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/%E8%87%AA%E5%AA%92%E4%BD%93/%E7%94%9F%E6%B4%BB/%E5%89%AF%E4%B8%9A/">副业</a></li></ul></li></ul></li></ul>
  
         </h3>
     </div>
@@ -186,20 +188,20 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#起因为什么要弄自媒体"><span class="post-toc-number">1.</span> <span class="post-toc-text">起因为什么要弄自媒体</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-Rust-3"
+<article id="post-自媒体到底能不能作为副业"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Rust学习笔记3</h1>
+        <h1 class="post-card-title">自媒体到底能不能作为副业</h1>
         <div class="post-meta">
-            <time class="post-time" title="2020-05-24 02:54:48" datetime="2020-05-23T18:54:48.000Z"  itemprop="datePublished">2020-05-24</time>
+            <time class="post-time" title="2022-12-03 11:21:56" datetime="2022-12-03T03:21:56.000Z"  itemprop="datePublished">2022-12-03</time>
 
-             <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/Rust/">Rust</a></li></ul> 
+             <ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/djkloopcn/categories/%E8%87%AA%E5%AA%92%E4%BD%93/">自媒体</a></li></ul> 
 
             
 <span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
@@ -210,13 +212,10 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <blockquote>
-<p>万丈高楼，HelloWorld起…</p>
+<p>7月份从北京回新疆了，可以说今年是非常阴间了，先是在北京封了一个月(5月)，然后6月辞职，7月回奎屯，8月回乌鲁木齐入职新公司，8月9号开始封控，11月28号解封…期间因为心情太差，想把代码的事情暂时缓缓，然后就找了个自媒体的事情干，就是剪剪电影之类的。从中吸取的一些反思或者说是对程序员的一种新的理解。</p>
 </blockquote>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p><a href="https://kaisery.github.io/trpl-zh-cn/ch04-00-understanding-ownership.html" target="_blank" rel="noopener">https://kaisery.github.io/trpl-zh-cn/ch04-00-understanding-ownership.html</a></p>
-</blockquote>
-<p>所有权（系统）是 Rust 最为与众不同的特性，它让 Rust 无需垃圾回收（garbage collector）即可保障内存安全。因此，理解 Rust 中所有权如何工作是十分重要的。本章，我们将讲到所有权以及相关功能：借用、slice 以及 Rust 如何在内存中布局数据。</p>
-<figure class="highlight rs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. rust通过所有权机制来管理内存，编译器在编译就会根据所有权规则对内存的使用进行检测</span></span><br><span class="line"><span class="comment">// 2. 堆和栈</span></span><br><span class="line"><span class="comment">//  2.1 在编译时栈中的所有数据都必须占用已知且固定的大小</span></span><br><span class="line"><span class="comment">//  2.2 在编译时大小未知或大小可能变化的数据，要改为存储在堆上</span></span><br><span class="line"><span class="comment">// 3. 作用域</span></span><br><span class="line"><span class="comment">// 4. String内存回收</span></span><br><span class="line"><span class="comment">// 5. 移动</span></span><br><span class="line"><span class="comment">// 6. clone</span></span><br><span class="line"><span class="comment">// 7. 栈上数据拷贝</span></span><br><span class="line"><span class="comment">// 8. 函数和作用域</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">  <span class="keyword">let</span> x: <span class="built_in">i32</span> = <span class="number">1</span>;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> y: <span class="built_in">i32</span> = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"y = &#123;&#125;"</span>, y);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"x - x = &#123;&#125;"</span>, x);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> s1 = <span class="built_in">String</span>::from(<span class="string">"Hello"</span>);</span><br><span class="line">    s1.push_str(<span class="string">" World"</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s1 = &#123;&#125;"</span>, s1); <span class="comment">// String类型离开作用域时，会调用drop方法</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 移动</span></span><br><span class="line">    <span class="keyword">let</span> s2 = <span class="built_in">String</span>::from(<span class="string">"test"</span>);</span><br><span class="line">    <span class="comment">// let s3 = s2  会报错，s2离开的时候内存会被释放掉，所以不能这样直接赋值，也就是不能再使用s2</span></span><br><span class="line">    <span class="comment">// 这里可以使用深拷贝来解决s2不能使用的问题</span></span><br><span class="line">    <span class="keyword">let</span> s3 = s2.clone();</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s2 = &#123;&#125;"</span>, s2);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"s2 = &#123;&#125;"</span>, s3);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// copy 栈上的数据拷贝，就是拷贝的数据。</span></span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">let</span> b = a;</span><br><span class="line">  <span class="built_in">println!</span>(<span class="string">"a = &#123;&#125;, b = &#123;&#125;"</span>, a, b);</span><br><span class="line">  <span class="comment">// 常用的copy trait有</span></span><br><span class="line">  <span class="comment">// 所有的整型</span></span><br><span class="line">  <span class="comment">// 浮点型</span></span><br><span class="line">  <span class="comment">// 布尔值</span></span><br><span class="line">  <span class="comment">// 字符类型 char</span></span><br><span class="line">  <span class="comment">// 元组</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="起因为什么要弄自媒体"><a href="#起因为什么要弄自媒体" class="headerlink" title="起因为什么要弄自媒体"></a>起因为什么要弄自媒体</h2><p>第一想着能不能搞点外快…在一个以前没有机会接触，因为疫情的居家办公的原因，反而给我了个机会，让我从0开始学习…日了狗了。</p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -224,12 +223,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-06-09T17:14:03.000Z" itemprop="dateUpdated">2020-06-10 01:14:03</time>
+    最后更新时间：<time datetime="2022-12-03T16:34:13.000Z" itemprop="dateUpdated">2022-12-04 00:34:13</time>
 </span><br>
 
 
         
-        <br />文章地址：<a href="/djkloopcn/2020/05/24/Rust-3/" target="_blank" rel="external">https://djkloop.github.io/2020/05/24/Rust-3/</a>
+        <br />文章地址：<a href="/djkloopcn/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/" target="_blank" rel="external">https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/</a>
         
     </div>
     
@@ -250,7 +249,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" rel="tag">编程语言</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E5%89%AF%E4%B8%9A/" rel="tag">副业</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E6%9D%82%E6%96%87/" rel="tag">杂文</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/djkloopcn/tags/%E8%87%AA%E5%AA%92%E4%BD%93/" rel="tag">自媒体</a></li></ul>
 
 
             
@@ -260,7 +259,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&pic=https://djkloop.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/&title=《自媒体到底能不能作为副业》 — djkloop 的技术博客&pic=https://djkloop.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -270,22 +269,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/&title=《自媒体到底能不能作为副业》 — djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/2020/05/24/Rust-3/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Rust学习笔记3》 — djkloop 的技术博客&url=https://djkloop.github.io/2020/05/24/Rust-3/&via=https://djkloop.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《自媒体到底能不能作为副业》 — djkloop 的技术博客&url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/&via=https://djkloop.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/2020/05/24/Rust-3/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -305,21 +304,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/djkloopcn/2020/05/24/Rust-01/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Rust学习笔记1</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/djkloopcn/2020/05/24/Rust-2/" id="post-next" class="post-nav-link">
+      <a href="/djkloopcn/2021/09/18/TheArtOfTrading/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Rust学习笔记2</h4>
+        <h4 class="title">读《高级趋势技术分析 - 引言》总结</h4>
       </a>
     </div>
   
@@ -474,7 +466,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&pic=https://djkloop.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/&title=《自媒体到底能不能作为副业》 — djkloop 的技术博客&pic=https://djkloop.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -484,22 +476,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/2020/05/24/Rust-3/&title=《Rust学习笔记3》 — djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/&title=《自媒体到底能不能作为副业》 — djkloop 的技术博客&source=一无所有，则无所不能！" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/2020/05/24/Rust-3/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Rust学习笔记3》 — djkloop 的技术博客&url=https://djkloop.github.io/2020/05/24/Rust-3/&via=https://djkloop.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《自媒体到底能不能作为副业》 — djkloop 的技术博客&url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/&via=https://djkloop.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/2020/05/24/Rust-3/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://djkloop.github.io/2022/12/03/%E8%87%AA%E5%AA%92%E4%BD%93%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E5%89%AF%E4%B8%9A/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -510,7 +502,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJUlEQVR42u3aMW7DMAwF0Nz/0u7SLUj8SaoFLD1PQerIfB5UUuTrFV9XcH26P1kz/9XowsDAeCwjCe7TN++f31fOV/j+3O8vDgMD4wRGEsSn+5OAclj1BWFgYGAk93xP6ZJ7es/FwMDASNK4PLGrpqEYGBgYvSI2P+Oqbqb/WotjYGA8kJGfuv//5z/pb2BgYDyKcRWvtanhPJ7fdTAwMLZm5Btc8vhktWaBmsSDgYFxACNvQ+bNy2rBmTQ+o+M2DAyMTRnVEJMgJsliPkaGgYFxMiMBVP9aDTrf7jEwMHZlJMslKVp+3NYbOLv5LQYGxtaM6nH85JisNySRPx0DA2NvRjXVSz4nJWj1aK/QhMDAwNiI0StNe7Coni5uuxgYGCcw8nK0WmQmm3W+uRdSTAwMjE0ZvUfOS9be8dwr37kxMDA2YswbmZPX0duCC9suBgbG1oy1Q12FUFoNAwwMjHMY8+Oz3mZdbTBgYGCcxsibi/ORr0kxfPMqMTAwDmAkKWDvUKw6ctGLCgMD4wRGfnAfLRo3Fa7gil4lBgbGAYxektdrLfSK4ZtfYWBgbMq4ild1XGM+chGxMTAwtmasOtyvHvdXRzSWtT8xMDAey+gVkPkIxapmQPlNY2BgbMfobZS9oCf/AW7yXAwMDIxWqpeEmw9zRDMjGBgYGMWWZC99LCMxMDAOYEyCq37T23AxMDBOZlRLx/wBawfOFjQ1MTAwnsf4AUcX+gi0nZVTAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAEj0lEQVR42u3aQW7jMBAEwPz/015gTwskdrpnZKxpl05BEktkyQA5zfn6iq/b3+veb27/XPf+//t/fv9U8v/7vz5+4urChAkTJkwvyXR7eCUQybQTjnujunbaj+95dxaYMGHChOlwpvx2s8/OBp1vPhLofGyYMGHChOkzmTYbiPyJbUmcjHZWomPChAkTpk9mmgWyeTF8FVzyOjFhwoQJ0ycw5bebBayzmHhW9ObcT8nCMWHChAnTizHNjgDf4+eLL0yYMGHC9GJMt/Jq79Mu/Jum1fzwsp41JkyYMGE6likvO9vgdRikjl5De8DZluiYMGHChOlcpnzCbbNOsmBvDhfbqDf/KvzwV0yYMGHCdDhTvpC3oHlkvAeaPT0qmzFhwoQJ0+FMOVYb1w6HNdqItAexxcvDhAkTJkxvxFSXhaOFdobVPit5wXUKjgkTJkyYjmLKHzxrlxkOpdyabMry9quACRMmTJjOYto0wcxafJKX0a7F+5agVUKACRMmTJhemGnWprMpmHOg/Ujy4Dh/MZgwYcKE6SymWbtMezTYbhSeF/K2GwVMmDBhwvQeTLNBbyDyuyW/bykTXEyYMGHC9B5MeQB61QTygLh9AXl5HJ3u5mPDhAkTJkwvzNTeLg9P86K0bRvKC/WrymlMmDBhwnQu02zXMCsp26aZ2QHkrCWo2IlgwoQJE6ZjmZIydTP0Z1TqLWge6f5wB0yYMGHC9HZMm2m3jaSzzcpVbTrR0zFhwoQJ04FMSfC6adPJp9G2+Gyg8+AYEyZMmDCdzrQpSocPi5fz9imzQrrYpmDChAkTpgOZkiU8D3/3R5vtnTdHp8WmBBMmTJgwHc6UDKU9gMwneVVWnZTWbXj9Q0KACRMmTJiOYrqqgNxM4BmLfTuLYtODCRMmTJiOYsqD3bZBZxbs5lFyu5Vpy++omseECRMmTIcwtY0y7XI+KzI3zbKbxta7GwJMmDBhwnQg06xcvHaZb7cXbXvrJhTGhAkTJkzvwZQMtGXatLTmG4i8sXVfGGPChAkTphOZ2vbTx4vr7PgwD4jzp28S2l86eTFhwoQJ04FMeUtNGwfnEXD+lGtHHrFiwoQJE6ZjmfLlPC8yZ8eNyT1ni3r7kn75TmHChAkTpqOY9kvv/jhzU3i3W4pVyIsJEyZMmI5lysPZ/XCvLYZbiFnZjAkTJkyYzmVqC8i8aaadaj7J2W82x7SYMGHChOlcpjyubQvaWYCbR7R18038qR9GjgkTJkyY3oKpbcfJIfKY+KrGoPbF/FLSY8KECROmY5kSoNlB5mwBrodbYn1ddWHChAkTpkOYZpFufqiZDy7fFuwPONvyGxMmTJgwncvUron5gr1plJnFx3nBvGkPwoQJEyZMJzLlrTn7JTkPc2fTni380dcCEyZMmDAdzpQcUuZ7ik1pmk911kg0HDMmTJgwYfoApraB5tkxbvvZWWMQJkyYMGH6NKZrjw/zF7MZ4aZNFhMmTJgwvQfTLOTdbBTy4nn2lH2DzmXHmZgwYcKE6b8ybQLQPKhNSuK2YL6qAB6iYMKECROmV2f6A8pYTW6tAc15AAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
  
