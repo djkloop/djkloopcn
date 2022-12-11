@@ -6,7 +6,7 @@
   <link href="/djkloopcn/atom.xml" rel="self"/>
   
   <link href="https://djkloop.github.io/"/>
-  <updated>2022-12-03T16:34:13.000Z</updated>
+  <updated>2022-12-10T15:35:45.000Z</updated>
   <id>https://djkloop.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue2.7升级记录</title>
+    <link href="https://djkloop.github.io/2022/12/10/vue2-7%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/"/>
+    <id>https://djkloop.github.io/2022/12/10/vue2-7%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-12-10T01:04:22.000Z</published>
+    <updated>2022-12-10T15:35:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// loader</span><br><span class="line">npm i -D vue-loader@15.10.0</span><br><span class="line">// vue</span><br><span class="line">npm i -D vue@2.7.14</span><br><span class="line">// eslint</span><br><span class="line">npm i -D eslint-plugin-vue@9.8.0</span><br><span class="line">// ts</span><br><span class="line">npm i -D fork-ts-checker-webpack-plugin@6.5.2</span><br><span class="line">npm i -D typescript@4.9.4</span><br><span class="line">npm i -D ts-loader@4.9.2</span><br><span class="line">npm i -D vue-tsc@1.0.12</span><br><span class="line">// volar</span><br><span class="line">npm i -D  @volar-plugins/vetur@0.1.0</span><br><span class="line">// vscode</span><br><span class="line">vuter -&gt; volar</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+      <category term="前端开发" scheme="https://djkloop.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Vue" scheme="https://djkloop.github.io/tags/Vue/"/>
+    
+      <category term="Typescript" scheme="https://djkloop.github.io/tags/Typescript/"/>
+    
+  </entry>
   
   <entry>
     <title>自媒体到底能不能作为副业</title>
